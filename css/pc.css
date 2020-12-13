@@ -1,0 +1,63 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#changeBK {
+	position: fixed;
+	bottom: 0px;
+	left: 50%;
+}
+
+.part {
+	width: 250px;
+}
+
+.part select {
+	width: 200px;
+}
+
+.part legend {
+	color: rgb(255, 0, 0);
+}
+
+.background {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+/* 对话框 */
+.dialog {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	z-index: 10;
+	width: 400px;
+	height: 200px;
+}
+
+.title {
+	width: 400px;
+	margin: 0px auto;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+	text-align: center;
+}
+
+.close {
+	float: right;
+}
+
+.close:hover {
+	cursor: pointer;
+}
+
+.content {
+	width: 400px;
+	margin: 0px auto;
+	text-align: center;
+	color: rgb(0, 255, 255);
+}

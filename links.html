@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>内容保护的链接</title>
+<script type="text/javascript">
+	var getC, c_arr0, c_arr1, big0, big1, random;
+	getC = unescape(document.cookie.substring(0));
+	if (getC != "") {
+		c_arr0 = getC.split(",");
+		for (var i = 0; i < c_arr0.length; ++i) {
+			c_arr1 = c_arr0[i].split("=");
+			if (c_arr1[0] == "big0") {
+				big0 = c_arr1[1];
+			}
+			if (c_arr1[0] == "big1") {
+				big1 = c_arr1[1];
+			}
+			if (c_arr1[0] == "random") {
+				random = c_arr1[1];
+			}
+		}
+	}
+	//大质数分解几乎不可逆
+	if (big0 == null || big1 == null || random == null
+			|| big0 * big1 != 100027981928977) {
+		alert("此页面不能随意访问");
+		document.cookie = "url=links.html";
+		location = "login.html";
+	} else {
+		var userRandom = prompt("请输入已获取的随机秘钥");
+		if (random != userRandom) {
+			alert("此页面不能随意访问");
+			document.cookie = "url=links.html";
+			location = "login.html";
+		}
+	}
+</script>
+</head>
+<body>
+	<a href="http://www.miya87.com" target="_blank">蜜芽</a><br>
+	<a href="http://www.by2272.com" target="_blank">鲍鱼</a><br>
+	<a href="https://javbibi.com" target="_blank">javbibi</a>
+</body>
+</html>

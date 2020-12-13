@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>验证页面</title>
+<script type="text/javascript">
+	var info = (location + "").split("?")[1];
+	if (info == null) {
+		alert("不允许直接访问");
+		location = "login.html";
+	} else {
+		var pairs0 = info.split("&")[0], pairs1 = info.split("&")[1];
+		var username = pairs0.split("=")[1], password = pairs1.split("=")[1];
+		if (username == "admin" && password == "123456") {
+			//将之前的url提前拿出来，并销毁原cookie
+			var getC, c_arr0, c_arr1;
+			getC = unescape(document.cookie.substring(0));
+			if (getC != "") {
+				c_arr0 = getC.split(",");
+				for (var i = 0; i < c_arr0.length; ++i) {
+					c_arr1 = c_arr0[i].split("=");
+					if (c_arr1[0] == "url") {
+						url = c_arr1[1];
+					}
+				}
+			}
+			//设置5秒的cookie，表示页面已经验证过
+			var random = Math.random();
+			prompt("验证通过，随机密钥是", random);
+			var nDate = new Date();
+			nDate.setSeconds(nDate.getSeconds() + 5);
+			document.cookie = ",big0=10001231,big1=10001567,random=" + random
+					+ ";expires=" + nDate.toGMTString();
+			location = url;
+		} else {
+			alert("验证错误");
+			location = "login.html";
+		}
+	}
+</script>
+</head>
+<body>
+	<p>I am server.html</p>
+</body>
+</html>

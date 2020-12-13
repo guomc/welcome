@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>国金涛的网址导航</title>
+<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">
+	//一、移动和pc端加载不同的style
+	var isPC = true;
+	var links = document.createElement("link");
+	links.rel = "stylesheet";
+	links.type = "text/css";
+	if (window.innerWidth > window.innerHeight) {
+		links.href = "css/pc.css";
+	} else {
+		isPC = false;
+		links.href = "css/mobile.css"
+	}
+	document.documentElement.appendChild(links);
+	//二、功能js
+	//1.跳转函数
+	function goWill(id, type) {
+		if (type == 0)
+			location = document.getElementById("form" + id).value;
+		else
+			open("http://" + document.getElementById("form" + id).value,
+					"_blank", "");
+	}
+	//2.手动修改背景
+	var i = 0;
+	function changeBK() {
+		if (i < 9)
+			++i;
+		else
+			i = 0;
+		if (isPC)
+			var str = "imgs/th" + i + ".jpg";
+		else
+			var str = "imgs/thh" + i + ".jpg";
+		document.getElementsByTagName('img')[0].src = str;
+	}
+	//3.随机背景
+	function randBK() {
+		var nDate = new Date();
+		i = nDate.getSeconds() % 10;
+		if (isPC)
+			var str = "imgs/th" + i + ".jpg";
+		else
+			var str = "imgs/thh" + i + ".jpg";
+		document.getElementsByTagName('img')[0].src = str;
+	}
+</script>
+</head>
+<body onload="randBK()">
+	<img src="" class="background">
+	<div style="float: left;" class="part">
+		<fieldset>
+			<legend>博客文章</legend>
+			<select name="url" id="form0">
+				<option value="docs/cooking.htm">论做菜的技巧</option>
+				<option value="docs/doctor.htm">医疗救护</option>
+				<option value="docs/android_and_eclipse.htm">开发安卓应用</option>
+				<option value="docs/bat_sketch.htm">批处理</option>
+				<option value="docs/c_and_codeblocks.htm">C语言</option>
+				<option value="docs/c++_sketch.htm">C++语言</option>
+				<option value="docs/circuit_test.htm">电路实验</option>
+				<option value="docs/digital_circuitry.htm">数字电路</option>
+				<option value="docs/dynamic_page.htm">动态页面设计</option>
+				<option value="docs/half_dynamic_page.htm">半动态页面设计</option>
+				<option value="docs/static_page.htm">静态页面设计</option>
+				<option value="docs/java_and_eclipse.htm">Java语言</option>
+				<option value="docs/MFC.htm">MFC界面程序</option>
+				<option value="docs/Win32_and_codeblocks.htm">Win32界面程序</option>
+				<option value="docs/OpenGL.htm">计算机图形学</option>
+				<option value="docs/classical_math.htm">经典数学</option>
+				<option value="docs/PS.htm">P图</option>
+				<option value="docs/sqlite3_and_sql.htm">标准SQL和sqlite3数据库</option>
+			</select>
+			<button onclick="goWill(0,0)">提交</button>
+		</fieldset>
+	</div>
+	<div style="float: left;" class="part">
+		<fieldset>
+			<legend>影视大全</legend>
+			<select name="url" id="form1">
+				<option value="www.dy2018.com">电影天堂</option>
+				<option value="www.bilibili.com">哔哩哔哩</option>
+				<option value="www.mandao.tv">动漫岛</option>	
+				<option value="www.ixigua.com">西瓜视频</option>
+				<option value="tv.cctv.com/live">央视直播</option>	
+			</select>
+			<button onclick="goWill(1,1)">提交</button>
+		</fieldset>
+	</div>
+	<div style="float: left;" class="part">
+		<fieldset>
+			<legend>高清图库</legend>
+			<select name="url" id="form2">
+				<option value="pixabay.com">pixabay</option>
+				<option value="www.pexels.com">pexels</option>
+				<option value="blog.flickr.net/en">flickr</option>
+			</select>
+			<button onclick="goWill(2,1)">提交</button>
+		</fieldset>
+	</div>
+	<div style="float: left;" class="part">
+		<fieldset>
+			<legend>政策资讯</legend>
+			<select name="url" id="form3">
+				<option value="www.gzzhijin.gov.cn">织金县人民政府</option>
+				<option value="www.toutiao.com">今日头条</option>
+				<option value="weibo.com">微博</option>
+			</select>
+			<button onclick="goWill(3,1)">提交</button>
+		</fieldset>
+	</div>
+	<div style="float: left;" class="part">
+		<fieldset>
+			<legend>文献资源</legend>
+			<select name="url" id="form4">
+				<option value="www.sciencemag.org">sciencemag</option>
+				<option value="www.mvyxws.com">医学微视</option>
+				<option value="www.who.int/zh">世界卫生组织</option>
+				<option value="www.dxzy163.com">大学资源网</option>
+				<option value="maspeak.com">外语学习</option>
+				<option value="zh.wikihow.com">生活小技巧</option>
+				<option value="www.ehow.com">外国佬的新奇想法</option>
+				<option value="www.yuwenmi.com">诗词歌赋</option>
+			</select>
+			<button onclick="goWill(4,1)">提交</button>
+		</fieldset>
+	</div>
+	<div style="float: left;" class="part">
+		<fieldset>
+			<legend>招聘信息</legend>
+			<select name="url" id="form5">
+				<option value="www.gzdysx.com">贵州人163网</option>
+				<option value="www.xgzrs.com/article.html">新贵网</option>
+				<option value="pta.guizhou.gov.cn">贵州人事考试信息网</option>
+				<option value="www.gzrc.com.cn">贵州人才信息网</option>
+				<option value="www.12114job.com">贵州人才网</option>
+				<option value="www.fenbi.com/page/home">粉笔网</option>
+			</select>
+			<button onclick="goWill(5,1)">提交</button>
+		</fieldset>
+	</div>
+	<div style="float: left;" class="part">
+		<fieldset>
+			<legend>在线工具</legend>
+			<select name="url" id="form6">
+				<option value="tianqi.so.com/weather/101260707">天气</option>
+				<option value="ditu.amap.com">地图</option>
+				<option value="www.liantu.com">生成二维码</option>
+			</select>
+			<button onclick="goWill(6,1)">提交</button>
+		</fieldset>
+	</div>
+	<div style="float: left;" class="part">
+		<fieldset>
+			<legend>游客止步</legend>
+			<select name="url" id="form7">
+				<option value="links.html">links</option>
+			</select>
+			<button onclick="goWill(7,0)">提交</button>
+		</fieldset>
+	</div>
+	<div class="dialog" id="fDiv">
+		<div class="title" id="title">
+			便签<span class="close" id="close" title="关闭这个可移动窗口">&times;</span>
+		</div>
+		<div class="content">
+			<textarea wrap="off"
+				style="overflow: scroll; width: 400px; height: 200px;">
+对雪
+  高骈 〔唐代〕
+六出飞花入户时，坐看青竹变琼枝。
+如今好上高楼望，盖尽人间恶路岐。
+
+译文：
+雪花飘舞着飞入了窗户时，我正坐在窗前，看着青青的竹枝因
+雪覆盖面似白玉一般。此时正好登上高楼去远望，那人世间一
+切险恶的岔路都被大雪覆盖了。
+				</textarea>
+		</div>
+	</div>
+	<button onclick="changeBK()" id="changeBK">改变背景</button>
+</body>
+<script type="text/javascript">
+	//4.广告的移动
+	//标记是否发生了down()
+	var flag = false;
+	//当前触点的坐标
+	var cur = {
+		x : 0,
+		y : 0
+	}
+	var nx, ny, dx, dy, x, y;
+	var obj = document.getElementById("fDiv");
+	var title = document.getElementById("title");
+	function down() {
+		flag = true;
+		var touch;
+		if (event.touches) {
+			//移动端
+			touch = event.touches[0];
+		} else {
+			//pc端
+			touch = event;
+		}
+		cur.x = touch.pageX;
+		cur.y = touch.pageY;
+		//可以直接获取？
+		dx = obj.offsetLeft;
+		dy = obj.offsetTop;
+	}
+	function move() {
+		if (flag) {
+			var touch;
+			if (event.touches) {
+				touch = event.touches[0];
+			} else {
+				touch = event;
+			}
+			nx = touch.pageX - cur.x;
+			ny = touch.pageY - cur.y;
+			//最终的div坐标，鼠标相对div左上角位置不变
+			x = dx + nx;
+			y = dy + ny;
+			obj.style.left = x + "px";
+			obj.style.top = y + "px";
+			//阻止页面的滑动默认事件
+			document.addEventListener("touchmove", function() {
+				event.preventDefault();
+			}, false);
+		}
+	}
+	//鼠标释放时候的函数
+	function end() {
+		flag = false;
+	}
+	title.addEventListener("mousedown", function() {
+		down();
+	}, false);
+	title.addEventListener("touchstart", function() {
+		down();
+	}, false)
+	title.addEventListener("mousemove", function() {
+		move();
+	}, false);
+	title.addEventListener("touchmove", function() {
+		move();
+	}, false)
+	document.body.addEventListener("mouseup", function() {
+		end();
+	}, false);
+	title.addEventListener("touchend", function() {
+		end();
+	}, false);
+	var close = document.getElementById("close");
+	close.addEventListener("click", function() {
+		obj.style.display = "none";
+	}, false);
+</script>
+</html>

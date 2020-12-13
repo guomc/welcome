@@ -1,0 +1,2556 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="OpenGL.files/filelist.xml">
+<link rel=Edit-Time-Data href="OpenGL.files/editdata.mso">
+<link rel=OLE-Object-Data href="OpenGL.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>目录</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Administrator</o:Author>
+  <o:LastAuthor>guomc</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2020-03-02T10:48:00Z</o:Created>
+  <o:LastSaved>2020-03-02T10:48:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2128</o:Words>
+  <o:Characters>12131</o:Characters>
+  <o:Company>Sky123.Org</o:Company>
+  <o:Lines>101</o:Lines>
+  <o:Paragraphs>28</o:Paragraphs>
+  <o:CharactersWithSpaces>14231</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:KSOProductBuildVer dt:dt="string">2052-11.1.0.9440</o:KSOProductBuildVer>
+ </o:CustomDocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-parent:"";
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:10.5pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:22.0pt;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;}
+h2
+	{mso-style-parent:"";
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:10.5pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;}
+h3
+	{mso-style-parent:"";
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:10.5pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-noshow:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-noshow:yes;
+	mso-style-next:正文;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.0pt;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:2.0gd;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-noshow:yes;
+	mso-style-next:正文;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.0pt;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:4.0gd;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.WPSOffice1, li.WPSOffice1, div.WPSOffice1
+	{mso-style-name:"WPSOffice手动目录 1";
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;}
+p.WPSOffice2, li.WPSOffice2, div.WPSOffice2
+	{mso-style-name:"WPSOffice手动目录 2";
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:2.0gd;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;}
+p.WPSOffice3, li.WPSOffice3, div.WPSOffice3
+	{mso-style-name:"WPSOffice手动目录 3";
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:4.0gd;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("OpenGL.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("OpenGL.files/header.htm") fcs;
+	mso-endnote-separator:url("OpenGL.files/header.htm") es;
+	mso-endnote-continuation-separator:url("OpenGL.files/header.htm") ecs;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 89.85pt 72.0pt 89.85pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-page-numbers:0;
+	mso-title-page:yes;
+	mso-even-footer:url("OpenGL.files/header.htm") ef1;
+	mso-footer:url("OpenGL.files/header.htm") f1;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:网格型;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;text-justify-trim:
+punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><a name="_Toc15689"><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>目录</span></a><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-begin'></span>TOC \o &quot;1-3&quot;
+\h \u <span style='mso-element:field-separator'></span></span><![endif]--></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc8112"><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>一、</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'>OpenGL</span><span
+lang=EN-US style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:windowtext;text-decoration:none;
+text-underline:none'><span lang=EN-US>简介</span></span><span style='color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>............................................................................................................. </span><span
+style='mso-field-code:" PAGEREF _Toc8112 "'>1</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc24383"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>1.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>电脑环境配置</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>......................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc24383 "'>1</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc17538"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>2.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>第一个程序</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>............................................................................................................. </span><span
+style='mso-field-code:" PAGEREF _Toc17538 "'>1</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc6806"><span style='color:windowtext;text-decoration:none;text-underline:
+none'>(1)</span><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>单缓冲</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc6806 "'>1</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc29105"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(2)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>双缓冲</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc29105 "'>1</span></span></a></span></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc24460"><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>二、</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'>3d</span><span
+lang=EN-US style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:windowtext;text-decoration:none;
+text-underline:none'><span lang=EN-US>建模</span></span><span style='color:windowtext;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>...................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc24460 "'>2</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc32483"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>1.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>三维坐标系</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>............................................................................................................. </span><span
+style='mso-field-code:" PAGEREF _Toc32483 "'>2</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc24282"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(1)gluPerspective</span><span lang=EN-US style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>函数</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>......................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc24282 "'>2</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc23281"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(2)gluLookAt</span><span lang=EN-US style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>函数</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>............................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc23281 "'>2</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc20718"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>2.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>点</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc20718 "'>3</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc13726"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(1)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>一般代码</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc13726 "'>3</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc25413"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(2)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>设置点的大小</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>................................................................................................. </span><span
+style='mso-field-code:" PAGEREF _Toc25413 "'>3</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc30746"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(3)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>设置点的颜色</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>................................................................................................. </span><span
+style='mso-field-code:" PAGEREF _Toc30746 "'>3</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc3439"><span style='color:windowtext;text-decoration:none;text-underline:
+none'>3.</span><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>直线</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>....................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc3439 "'>3</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc2662"><span style='color:windowtext;text-decoration:none;text-underline:
+none'>(1)</span><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>实线</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>............................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc2662 "'>3</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc29520"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(2)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>虚线</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>............................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc29520 "'>3</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc5399"><span style='color:windowtext;text-decoration:none;text-underline:
+none'>(3)</span><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>设置线宽</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc5399 "'>3</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc26209"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>4.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>曲线</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>....................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc26209 "'>3</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc10772"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(1)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>一般代码</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc10772 "'>3</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc26107"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(2)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>图形反走样</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>.................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc26107 "'>3</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc21556"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>5.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>平面</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>....................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc21556 "'>4</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc16113"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(1)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>一般代码</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc16113 "'>4</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc19695"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(2)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>几何变换</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc19695 "'>4</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc11526"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(3)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>镂空效果</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc11526 "'>4</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc20608"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(4)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>纹理映射</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc20608 "'>5</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc13567"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(5)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>光照和材质</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>.................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc13567 "'>8</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc3114"><span style='color:windowtext;text-decoration:none;text-underline:
+none'>6.</span><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>曲面</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>....................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc3114 "'>9</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc25700"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>7.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>几何体</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>.................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc25700 "'>9</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc16246"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>8.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>分形</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>....................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc16246 "'>9</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc19501"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>9.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>粒子系统</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>................................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc19501 "'>9</span></span></a></span></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc12462"><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>三、视窗控制</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc12462 "'>9</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc30189"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>1.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>动画</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>....................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc30189 "'>9</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc21981"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(1)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>一般代码</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc21981 "'>9</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc20278"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(2)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>显示列表</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc20278 "'>9</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc24346"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>2.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>键盘</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>..................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc24346 "'>10</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc9555"><span style='color:windowtext;text-decoration:none;text-underline:
+none'>(1)</span><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>常规键</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>......................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc9555 "'>10</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc29677"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(2)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>功能键</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>......................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc29677 "'>10</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc23426"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(3)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>组合键</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>......................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc23426 "'>10</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc17672"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>3.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>鼠标</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>..................................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc17672 "'>10</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc6231"><span style='color:windowtext;text-decoration:none;text-underline:
+none'>(1)</span><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>左右键</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>......................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc6231 "'>10</span></span></a></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc23731"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>(2)</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>鼠标移动</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>...................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc23731 "'>10</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc19191"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>4.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>窗口菜单</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>.............................................................................................................. </span><span
+style='mso-field-code:" PAGEREF _Toc19191 "'>10</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc11155"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>5.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>子窗口</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>.................................................................................................................. </span><span
+style='mso-field-code:" PAGEREF _Toc11155 "'>10</span></span></a></span></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc12092"><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:windowtext;
+text-decoration:none;text-underline:none'><span lang=EN-US>四、附录</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................................ </span><span
+style='mso-field-code:" PAGEREF _Toc12092 "'>10</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc31927"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>1.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>可能用到的网址</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>.................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc31927 "'>10</span></span></a></span></p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 415.6pt'><span lang=EN-US><a
+href="#_Toc28689"><span style='color:windowtext;text-decoration:none;
+text-underline:none'>2.</span><span lang=EN-US style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'><span lang=EN-US>贝塞尔曲线</span></span><span
+style='color:windowtext;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>........................................................................................................... </span><span
+style='mso-field-code:" PAGEREF _Toc28689 "'>10</span></span></a></span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><a name="_Toc568"></a><a name="_Toc12872"><span
+style='mso-bookmark:_Toc568'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>正文</span></span></a></p>
+
+<h1><a name="_Toc8112"></a><a name="_Toc18866"><span style='mso-bookmark:_Toc8112'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>一、</span><span lang=EN-US>OpenGL</span></span></a><span
+style='mso-bookmark:_Toc18866'><span style='mso-bookmark:_Toc8112'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>简介</span></span></span></h1>
+
+<p class=MsoNormal><span lang=EN-US>OpenGL</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>用在计算机作图上，代码可以嵌入到其他</span><span
+lang=EN-US>C</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>系列程序中</span></p>
+
+<h2><a name="_Toc24383"></a><a name="_Toc19117"><span style='mso-bookmark:_Toc24383'><span
+lang=EN-US>1.</span></span></a><span style='mso-bookmark:_Toc19117'><span
+style='mso-bookmark:_Toc24383'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>电脑环境配置</span></span></span></h2>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>解压</span><span lang=EN-US>OpenGL.zip</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><span lang=EN-US>dll</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>文件复制到</span><span
+lang=EN-US>system32</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>或者</span><span
+lang=EN-US>sysWOW64</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>下；</span></p>
+
+<p class=MsoNormal><span lang=EN-US>lib</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>文件复制到</span><span
+lang=EN-US>MinGW</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>的</span><span lang=EN-US>lib</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>目录下；</span></p>
+
+<p class=MsoNormal><span lang=EN-US>h</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>文件复制到</span><span
+lang=EN-US>include/GL</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>目录下及</span><span
+lang=EN-US>include</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>目录下；</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>创建</span><span lang=EN-US>Glut</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>工程，</span><span lang=EN-US>select GLUT's location</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>选</span><span lang=EN-US>...\CodeBlocks\MinGW</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>。</span></p>
+
+<h2><a name="_Toc17538"></a><a name="_Toc12995"><span style='mso-bookmark:_Toc17538'><span
+lang=EN-US>2.</span></span></a><span style='mso-bookmark:_Toc12995'><span
+style='mso-bookmark:_Toc17538'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>第一个程序</span></span></span></h2>
+
+<h3><a name="_Toc6806"></a><a name="_Toc14175"><span style='mso-bookmark:_Toc6806'><span
+lang=EN-US>(1)</span></span></a><span style='mso-bookmark:_Toc14175'><span
+style='mso-bookmark:_Toc6806'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>单缓冲</span></span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>#include
+&lt;windows.h&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>#include
+&lt;GL/glut.h&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>void display()<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glClearColor(0,0,0,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glClear(GL_COLOR_BUFFER_BIT);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>/*</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>添加实验代码</span><span lang=EN-US style='color:red'>*/<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>/*</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>添加实验代码</span><span lang=EN-US style='color:red'>*/<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glFlush();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>int main()<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutInitDisplayMode(GLUT_SINGLE |
+GLUT_RGB);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutInitWindowSize(500,500);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>   
+</span>glutInitWindowPosition(1366/2-250,768/2-250);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutCreateWindow(&quot;glut project&quot;);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutDisplayFunc(display);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutMainLoop();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>return 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}</span></p>
+
+<h3><a name="_Toc29105"></a><a name="_Toc14630"><span style='mso-bookmark:_Toc29105'><span
+lang=EN-US>(2)</span></span></a><span style='mso-bookmark:_Toc14630'><span
+style='mso-bookmark:_Toc29105'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>双缓冲</span></span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>#include
+&lt;windows.h&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>#include
+&lt;GL/glut.h&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>void display()<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glClearColor(0,0,0,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>和单缓冲不同</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>   
+</span>glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>/*</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>添加实验代码</span><span lang=EN-US style='color:red'>*/<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>/*</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>添加实验代码</span><span lang=EN-US style='color:red'>*/<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>和单缓冲不同</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutSwapBuffers();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>int main()<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>和单缓冲不同</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutInitDisplayMode(GLUT_DOUBLE |
+GLUT_RGBA);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutInitWindowSize(500,500);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>   
+</span>glutInitWindowPosition(1366/2-250,768/2-250);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutCreateWindow(&quot;glut project&quot;);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutDisplayFunc(display);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutMainLoop();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>return 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h1><a name="_Toc24460"></a><a name="_Toc29292"><span style='mso-bookmark:_Toc24460'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>二、</span><span lang=EN-US>3d</span></span></a><span
+style='mso-bookmark:_Toc29292'><span style='mso-bookmark:_Toc24460'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>建模</span></span></span></h1>
+
+<h2><a name="_Toc32483"></a><a name="_Toc635"><span style='mso-bookmark:_Toc32483'><span
+lang=EN-US>1.</span></span></a><span style='mso-bookmark:_Toc635'><span
+style='mso-bookmark:_Toc32483'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>三维坐标系</span></span></span></h2>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>如果</span><span lang=EN-US>z</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>轴朝上，那么</span><span lang=EN-US>x</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>轴屏幕向外，</span><span lang=EN-US>y</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>轴向右；一般要嵌入的代码如下：</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>设置透视投影</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glMatrixMode(GL_PROJECTION);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glLoadIdentity();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>可视空间</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>gluPerspective(75, 1, 1,
+400000000);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>设置观察点的位置</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glMatrixMode(GL_MODELVIEW);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glLoadIdentity();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>观察点的</span><span lang=EN-US style='color:red'>x,y,z</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>位置</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>gluLookAt(0, -200000000,
+200000000, 0, 0, 0, 0, 0, 1);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:red'>绘制三维图形</span><span
+lang=EN-US style='color:red'>;<o:p></o:p></span></p>
+
+<h3><a name="_Toc24282"></a><a name="_Toc25375"><span style='mso-bookmark:_Toc24282'><span
+lang=EN-US>(1)gluPerspective</span></span></a><span style='mso-bookmark:_Toc25375'><span
+style='mso-bookmark:_Toc24282'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>函数</span></span></span></h3>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>参数依次是：</span><span lang=EN-US>fovy,w/h,near,far</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，如下图所示：</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="图片_x0020_96" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:279.75pt;height:120pt;mso-wrap-style:square;
+ mso-position-horizontal-relative:page;mso-position-vertical-relative:page'>
+ <v:imagedata src="OpenGL.files/image001.png" o:title="" croptop="18957f"
+  cropbottom="25920f" cropleft="18689f" cropright="20523f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=373 height=160
+src="OpenGL.files/image002.jpg" v:shapes="图片_x0020_96"><![endif]></span></p>
+
+<h3><a name="_Toc23281"></a><a name="_Toc19115"><span style='mso-bookmark:_Toc23281'><span
+lang=EN-US>(2)gluLookAt</span></span></a><span style='mso-bookmark:_Toc19115'><span
+style='mso-bookmark:_Toc23281'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>函数</span></span></span></h3>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>参数依次是：眼睛的位置，看向的位置，哪个坐标轴朝上</span></p>
+
+<h2><a name="_Toc20718"></a><a name="_Toc30618"><span style='mso-bookmark:_Toc20718'><span
+lang=EN-US>2.</span></span></a><span style='mso-bookmark:_Toc30618'><span
+style='mso-bookmark:_Toc20718'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>点</span></span></span></h2>
+
+<h3><a name="_Toc13726"><span lang=EN-US>(1)</span></a><span style='mso-bookmark:
+_Toc13726'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>一般代码</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glBegin(GL_POINTS);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glVertex3f(1,1,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEnd();<o:p></o:p></span></p>
+
+<h3><a name="_Toc25413"><span lang=EN-US>(2)</span></a><span style='mso-bookmark:
+_Toc25413'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>设置点的大小</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>在</span><span lang=EN-US style='color:red'>glBegin()</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>之前插入，默认大小是</span><span lang=EN-US
+style='color:red'>1.0f<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glPointSize(7.0f);<o:p></o:p></span></p>
+
+<h3><a name="_Toc30746"><span lang=EN-US>(3)</span></a><span style='mso-bookmark:
+_Toc30746'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>设置点的颜色</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>在</span><span lang=EN-US style='color:red'>glVertex3f()</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>之前插入</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glColor4f(1,0,0,1);<o:p></o:p></span></p>
+
+<h2><a name="_Toc3439"></a><a name="_Toc23947"><span style='mso-bookmark:_Toc3439'><span
+lang=EN-US>3.</span></span></a><span style='mso-bookmark:_Toc23947'><span
+style='mso-bookmark:_Toc3439'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>直线</span></span></span></h2>
+
+<h3><a name="_Toc2662"><span lang=EN-US>(1)</span></a><span style='mso-bookmark:
+_Toc2662'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>实线</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glBegin(GL_LINES);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glVertex3f(1,0,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glVertex3f(0,1,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEnd();<o:p></o:p></span></p>
+
+<h3><a name="_Toc29520"><span lang=EN-US>(2)</span></a><span style='mso-bookmark:
+_Toc29520'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>虚线</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>这段代码在</span><span lang=EN-US style='color:red'>glBegin()</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>之前插入</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEnable(GL_LINE_STIPPLE);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>/*</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>第一个参数表示重复次数，第二个参数表示一个</span><span lang=EN-US
+style='color:red'>16</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>位的二进制数（</span><span
+lang=EN-US style='color:red'>1</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>的位置表示画、</span><span
+lang=EN-US style='color:red'>0</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>的位置表示不画）</span><span
+lang=EN-US style='color:red'>;</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>比如参数</span><span
+lang=EN-US style='color:red'>(2,0x3f07)</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>，即</span><span lang=EN-US style='color:red'>0011 1111 0000 0111</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>，从低位到高位表示先画</span><span lang=EN-US
+style='color:red'>3*2</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>个像素、再空</span><span
+lang=EN-US style='color:red'>5*2</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>个像素、再画</span><span
+lang=EN-US style='color:red'>6*2</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>个像素、最后空</span><span
+lang=EN-US style='color:red'>2*2</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>个像素</span><span
+lang=EN-US style='color:red'>*/<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glLineStipple(1,0x00ff);<o:p></o:p></span></p>
+
+<h3><a name="_Toc5399"><span lang=EN-US>(3)</span></a><span style='mso-bookmark:
+_Toc5399'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>设置线宽</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>在</span><span lang=EN-US style='color:red'>glBegin()</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>之前插入</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glLineWidth(5.0f);<o:p></o:p></span></p>
+
+<h2><a name="_Toc26209"></a><a name="_Toc31808"><span style='mso-bookmark:_Toc26209'><span
+lang=EN-US>4.</span></span></a><span style='mso-bookmark:_Toc31808'><span
+style='mso-bookmark:_Toc26209'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>曲线</span></span></span></h2>
+
+<h3><a name="_Toc10772"><span lang=EN-US>(1)</span></a><span style='mso-bookmark:
+_Toc10772'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>一般代码</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>按先后顺序进行连接</span><span lang=EN-US style='color:
+red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glBegin(GL_LINE_STRIP);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glVertex3f(0,1,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glVertex3f(1,0,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glVertex3f(0,-1,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEnd();<o:p></o:p></span></p>
+
+<h3><a name="_Toc26107"><span lang=EN-US>(2)</span></a><span style='mso-bookmark:
+_Toc26107'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>图形反走样</span></span></h3>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>目标像素和周围像素做一定的混合，看起来有点模糊而不是锯齿</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEnable(GL_BLEND);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEnable(GL_LINE_SMOOTH);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>第一个参数</span><span lang=EN-US style='color:red'>GL_POINT_SMOOTH</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>、</span><span lang=EN-US style='color:red'>GL_LINE_SMOOTH</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>、</span><span lang=EN-US style='color:red'>GL_POLYGON_SMOOTH</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>可选</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>第二个参数</span><span lang=EN-US style='color:red'>GL_NICEST</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>、</span><span lang=EN-US style='color:red'>GL_FASTEST</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>可选，表示效果上偏重质量还是速度</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glHint(GL_LINE_SMOOTH,GL_NICEST);</span></p>
+
+<h2><a name="_Toc21556"></a><a name="_Toc3384"><span style='mso-bookmark:_Toc21556'><span
+lang=EN-US>5.</span></span></a><span style='mso-bookmark:_Toc3384'><span
+style='mso-bookmark:_Toc21556'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>平面</span></span></span></h2>
+
+<h3><a name="_Toc16113"><span lang=EN-US>(1)</span></a><span style='mso-bookmark:
+_Toc16113'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>一般代码</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glBegin(GL_POLYGON);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glVertex3f(1,1,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glVertex3f(0,2,2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glVertex3f(0,0,2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEnd();<o:p></o:p></span></p>
+
+<h3><a name="_Toc19695"><span lang=EN-US>(2)</span></a><span style='mso-bookmark:
+_Toc19695'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>几何变换</span></span></h3>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>代码放到</span><span lang=EN-US>glBegin</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>函数或者具体绘制图形之前</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;
+ mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=308 valign=top style='width:231.05pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>glTranslatef(GLfloat,GLfloat,GLfloat)</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>平移到某个位置，参数表示目标点的位置</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=308 valign=top style='width:231.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>glRotatef(GLfloat,GLfloat,GLfloat,GLfloat)</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>绕原点到目标点的轴做逆时针旋转</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=308 valign=top style='width:231.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>glScalef(GLfloat,GLfloat,GLfloat)</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>图形</span><span lang=EN-US>xyz</span><span
+  style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>轴的缩放比例</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><a name="_Toc11526"></a><a name="_Toc14072"><span style='mso-bookmark:_Toc11526'><span
+lang=EN-US>(3)</span></span></a><span style='mso-bookmark:_Toc14072'><span
+style='mso-bookmark:_Toc11526'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>镂空效果</span></span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>一个</span><span lang=EN-US style='color:red'>32*32bit</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>大小单位图案，</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>数组中的一个元素表示</span><span lang=EN-US
+style='color:red'>8</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>个</span><span
+lang=EN-US style='color:red'>bit</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>位的像素分步情况、一行</span><span
+lang=EN-US style='color:red'>4</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>个，</span><span
+lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>方向从图案左下角开始、从左到右、从下到上</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>static GLubyte Mask[128]
+=<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x00, 0x00, 0x00, 0x00, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x00, 0x00, 0x00, 0x00,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x03, 0x80, 0x01, 0xC0, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x06, 0xC0, 0x03, 0x60, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'>   </span>0x04,
+0x60, 0x06, 0x20, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x04, 0x30, 0x0C, 0x20, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x04, 0x18, 0x18, 0x20, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x04, 0x0C, 0x30, 0x20, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x04, 0x06, 0x60, 0x20, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x44, 0x03, 0xC0, 0x22, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x44, 0x01, 0x80, 0x22, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x44, 0x01, 0x80, 0x22, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x44, 0x01, 0x80, 0x22, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x44, 0x01, 0x80, 0x22, <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x44, 0x01, 0x80, 0x22,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x44, 0x01, 0x80, 0x22,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x66, 0x01, 0x80, 0x66,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x33, 0x01, 0x80, 0xCC,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x19, 0x81, 0x81, 0x98,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x0C, 0xC1, 0x83, 0x30,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x07, 0xE1, 0x87, 0xE0,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x03, 0x3F, 0xFC, 0xC0,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x03, 0x31, 0x8C, 0xC0,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x03, 0x3F, 0xFC, 0xC0,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x06, 0x64, 0x26, 0x60,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x0C, 0xCC, 0x33, 0x30,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x18, 0xCC, 0x33, 0x18,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x10, 0xC4, 0x23, 0x08,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x10, 0x63, 0xC6, 0x08,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x10, 0x30, 0x0C, 0x08,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>0x10, 0x18, 0x18, 0x08,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'> </span>0x10,
+0x00, 0x00, 0x08<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>};<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>在左下方绘制一个有镂空效果的正方形</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEnable(GL_POLYGON_STIPPLE);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glPolygonStipple(Mask);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:red'>绘制具体图形</span><span
+lang=EN-US style='color:red'>;<o:p></o:p></span></p>
+
+<h3><a name="_Toc20608"></a><a name="_Toc30704"><span style='mso-bookmark:_Toc20608'><span
+lang=EN-US>(4)</span></span></a><span style='mso-bookmark:_Toc30704'><span
+style='mso-bookmark:_Toc20608'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>纹理映射</span></span></span></h3>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>使用双缓冲，加载</span><span lang=EN-US>BMP</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>纹理图片的</span><span lang=EN-US>load_texture</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>函数</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>#include &lt;stdio.h&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>#include &lt;stdlib.h&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>#include
+&lt;GL/glext.h&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>#define BMP_Header_Length
+54</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>int power_of_two(int n)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>if( n &lt;= 0 )<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>return 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>return (n &amp; (n-1)) == 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>GLuint load_texture(const
+char* file_name)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLint width, height, total_bytes;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLubyte* pixels = 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLint last_texture_ID;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLuint texture_ID = 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>打开文件，如果失败，返回</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'>   </span>FILE*
+pFile = fopen(file_name, &quot;rb&quot;);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>if( pFile == 0 )return 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>读取文件中图象的宽度和高度</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>fseek(pFile, 0x0012, SEEK_SET);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>fread(&amp;width, 4, 1, pFile);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>fread(&amp;height, 4, 1, pFile);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>fseek(pFile, BMP_Header_Length, SEEK_SET);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>计算每行像素所占字节数，并根据此数据计算总像素字节数</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>GLint line_bytes = width * 3;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>while( line_bytes % 4 != 0 )<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>++line_bytes;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>total_bytes = line_bytes * height;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>根据总像素字节数分配内存</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>pixels = (GLubyte*)malloc(total_bytes);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>if( pixels == 0 )<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>fclose(pFile);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>return 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>读取像素数据</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>if( fread(pixels, total_bytes, 1, pFile)
+&lt;= 0 )<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>free(pixels);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>fclose(pFile);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>return 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>在旧版本的</span><span lang=EN-US style='color:red'> OpenGL </span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>中</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>如果图象的宽度和高度不是的整数次方，则需要进行缩放</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>这里并没有检查</span><span lang=EN-US style='color:red'> OpenGL </span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>版本，出于对版本兼容性的考虑，按旧版本处理</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>另外，无论是旧版本还是新版本</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>当图象的宽度和高度超过当前</span><span lang=EN-US style='color:red'> OpenGL </span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>实现所支持的最大值时，也要进行缩放</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>GLint max;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>glGetIntegerv(GL_MAX_TEXTURE_SIZE,
+&amp;max);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>if( !power_of_two(width)||
+!power_of_two(height)|| width &gt; max|| height &gt; max )<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>const GLint new_width = 256;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>//</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>规定缩放后新的大小为边长的正方形</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>const GLint new_height = 256;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>GLint new_line_bytes,
+new_total_bytes;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>//</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>计算每行需要的字节数和总字节数</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>GLubyte* new_pixels = 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>       </span><span
+style='mso-spacerun:yes'>     </span>new_line_bytes = new_width * 3;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>while( new_line_bytes % 4 != 0
+)++new_line_bytes;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>new_total_bytes = new_line_bytes *
+new_height;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>//</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>分配内存</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>new_pixels =
+(GLubyte*)malloc(new_total_bytes);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>if( new_pixels == 0 )<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>                </span>free(pixels);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>                </span>fclose(pFile);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>                </span>return 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>//</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>进行像素缩放</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>gluScaleImage(GL_RGB,width,
+height, GL_UNSIGNED_BYTE, pixels,new_width, new_height, GL_UNSIGNED_BYTE, new_pixels);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>//</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>释放原来的像素数据，把</span><span lang=EN-US style='color:red'>pixels</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>指向新的像素数据，并重新设置</span><span lang=EN-US
+style='color:red'>width</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>和</span><span
+lang=EN-US style='color:red'>height<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>free(pixels);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>pixels = new_pixels;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>width = new_width;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>            </span>height = new_height;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>分配一个新的纹理编号</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glGenTextures(1, &amp;texture_ID);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>if( texture_ID == 0 )<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>free(pixels);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>fclose(pFile);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>        </span>return 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>绑定新的纹理，载入纹理并设置纹理参数</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>在绑定前，先获得原来绑定的纹理编号，以便在最后进行恢复</span><span lang=EN-US style='color:
+red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glGetIntegerv(GL_TEXTURE_BINDING_2D,
+&amp;last_texture_ID);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glBindTexture(GL_TEXTURE_2D, texture_ID);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glTexParameteri(GL_TEXTURE_2D,
+GL_TEXTURE_MIN_FILTER, GL_LINEAR);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glTexParameteri(GL_TEXTURE_2D,
+GL_TEXTURE_MAG_FILTER, GL_LINEAR);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glTexParameteri(GL_TEXTURE_2D,
+GL_TEXTURE_WRAP_S, GL_REPEAT);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T,
+GL_REPEAT);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glTexEnvf(GL_TEXTURE_ENV,
+GL_TEXTURE_ENV_MODE, GL_REPLACE);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB,
+width, height, 0,GL_BGR_EXT, GL_UNSIGNED_BYTE, pixels);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glBindTexture(GL_TEXTURE_2D,
+last_texture_ID);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>之前为</span><span lang=EN-US style='color:red'> pixels </span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>分配的内存可在使用</span><span lang=EN-US style='color:
+red'> glTexImage2D </span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>以后释放</span><span
+lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>因为此时像素数据已经被</span><span lang=EN-US style='color:red'> OpenGL </span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>另行保存了一份（可能被保存到专门的图形硬件中）</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>free(pixels);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>return texture_ID;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>平面的纹理映射</span></p>
+
+<p class=MsoNormal><a name="_Toc15818"><span lang=EN-US style='color:red'>glEnable(GL_TEXTURE_2D);<o:p></o:p></span></a></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>GLuint textGround=load_texture(&quot;A:/ground.bmp&quot;);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glBindTexture(GL_TEXTURE_2D, textGround);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glBegin(GL_POLYGON);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>//glTexCoord2f</span></span><span style='mso-bookmark:_Toc15818'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>的参数：纹理图案左下角</span><span lang=EN-US
+style='color:red'>(0,0)</span></span><span style='mso-bookmark:_Toc15818'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>，左上角</span><span lang=EN-US style='color:red'>(0,1)</span></span><span
+style='mso-bookmark:_Toc15818'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>，右上角</span><span
+lang=EN-US style='color:red'>(1,1)</span></span><span style='mso-bookmark:_Toc15818'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>，右下角</span><span lang=EN-US style='color:red'>(1,0)<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glTexCoord2f(0.0f, 0.0f);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glVertex3f(-1,1,0);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glTexCoord2f(0.0f, 5.0f);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glVertex3f(1,1,0);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glTexCoord2f(5.0f, 5.0f);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glVertex3f(1,-1,0);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glTexCoord2f(5.0f, 0.0f);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glVertex3f(-1,-1,0);<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc15818'><span lang=EN-US
+style='color:red'>glEnd(); <o:p></o:p></span></span></p>
+
+<h3><span style='mso-bookmark:_Toc15818'><a name="_Toc13567"><span lang=EN-US>(5)</span></a></span><span
+style='mso-bookmark:_Toc15818'><span style='mso-bookmark:_Toc13567'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>光照和材质</span></span></span></h3>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>发散性光源</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>定义太阳光源，它是一种白色的光源</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>光源的位置</span><span
+lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>GLfloat sun_light_position[] = {0.0f, 0.0f, 0.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>光经过多次反射后留在环境中的值，表示的是颜色即</span><span
+lang=EN-US style='color:red'>RGBA<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>GLfloat sun_light_ambient[] = {0.0f, 0.0f, 0.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>光经过多次漫反射后留在环境中的值</span><span
+lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>GLfloat sun_light_diffuse[] = {1.0f, 1.0f, 1.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>光经过多次镜面反射后留在环境中的值</span><span
+lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>GLfloat sun_light_specular[] = {1.0f, 1.0f, 1.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>至少支持</span><span
+lang=EN-US style='color:red'>8</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>个光源，</span><span
+lang=EN-US style='color:red'>GL_LIGHT0</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>到</span><span lang=EN-US style='color:red'>GL_LIGHT7</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>，关闭光源</span><span lang=EN-US style='color:red'>glDisable()<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glLightfv(GL_LIGHT0, GL_POSITION,
+sun_light_position);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glLightfv(GL_LIGHT0, GL_AMBIENT,
+sun_light_ambient);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'>  
+</span>glLightfv(GL_LIGHT0, GL_DIFFUSE, sun_light_diffuse);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glLightfv(GL_LIGHT0, GL_SPECULAR,
+sun_light_specular);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glEnable(GL_LIGHT0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glEnable(GL_LIGHTING);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glEnable(GL_DEPTH_TEST);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>定义太阳的材质并绘制太阳</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>光线照到物体上，经过多次反射最终留在环境中的值，取值和</span><span
+lang=EN-US style='color:red'>GL_DIFFUSE</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>一样</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>GLfloat sun_mat_ambient[] = {0.0f, 0.0f, 0.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>光线照到物体上，经过漫反射最终留在环境中的值</span><span
+lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>GLfloat sun_mat_diffuse[] = {0.0f, 0.0f, 0.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>光线照到物体上，经过镜面反射最终留在环境中的值</span><span
+lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>GLfloat sun_mat_specular[] = {0.0f, 0.0f, 0.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>物体发出微弱光的颜色，但不影响其他物体</span><span
+lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>GLfloat sun_mat_emission[] = {0.5f, 0.0f, 0.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>镜面指数，</span><span
+lang=EN-US style='color:red'>0</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>到</span><span
+lang=EN-US style='color:red'>128<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLfloat sun_mat_shininess = 0.0f;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialfv(GL_FRONT, GL_AMBIENT,
+sun_mat_ambient);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialfv(GL_FRONT, GL_DIFFUSE,
+sun_mat_diffuse);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialfv(GL_FRONT, GL_SPECULAR,
+sun_mat_specular);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialfv(GL_FRONT, GL_EMISSION,
+sun_mat_emission);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialf (GL_FRONT, GL_SHININESS,
+sun_mat_shininess);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutSolidSphere(2.0, 40, 32);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>定义地球的材质并绘制地球</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLfloat earth_mat_ambient[] = {0.0f, 0.0f,
+0.5f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLfloat earth_mat_diffuse[] = {0.0f, 0.0f,
+0.5f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLfloat earth_mat_specular[] = {0.0f, 0.0f,
+1.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLfloat earth_mat_emission[] = {0.0f, 0.0f,
+0.0f, 1.0f};<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>GLfloat earth_mat_shininess = 30.0f;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialfv(GL_FRONT, GL_AMBIENT,
+earth_mat_ambient);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialfv(GL_FRONT, GL_DIFFUSE,
+earth_mat_diffuse);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialfv(GL_FRONT, GL_SPECULAR,
+earth_mat_specular);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialfv(GL_FRONT, GL_EMISSION,
+earth_mat_emission);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glMaterialf (GL_FRONT, GL_SHININESS,
+earth_mat_shininess);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glRotatef(angle, 0.0f, 0.0f, 1.0f);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glTranslatef(5.0f, 0.0f, 0.0f);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>glutSolidSphere(2.0, 40, 32);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}</span></p>
+
+<h2><a name="_Toc3114"></a><a name="_Toc18344"><span style='mso-bookmark:_Toc3114'><span
+lang=EN-US>6.</span></span></a><span style='mso-bookmark:_Toc18344'><span
+style='mso-bookmark:_Toc3114'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>曲面</span></span></span></h2>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>曲面纹理</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>static GLuint
+textGround=load_texture(&quot;A:/wall.bmp&quot;);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>建立一个二次曲面对象</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>GLUquadricObj *quadObj1 =
+gluNewQuadric();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>允许二次曲面对象生成纹理坐标</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>gluQuadricTexture(quadObj1,GL_TRUE);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>启动纹理</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEnable(GL_TEXTURE_2D);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glBindTexture(GL_TEXTURE_2D,textGround);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>球面</span><span lang=EN-US style='color:red'>gluSphere</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>、圆柱面</span><span lang=EN-US style='color:red'>gluCylinder</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>、圆面</span><span lang=EN-US style='color:red'>gluDisk</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>、扇形</span><span lang=EN-US style='color:red'>gluPartialDisk<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>gluSphere(quadObj1,1,30,30);<o:p></o:p></span></p>
+
+<h2><a name="_Toc25700"></a><a name="_Toc30396"><span style='mso-bookmark:_Toc25700'><span
+lang=EN-US>7.</span></span></a><span style='mso-bookmark:_Toc30396'><span
+style='mso-bookmark:_Toc25700'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>几何体</span></span></span></h2>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>在具体绘制图形前插入，开启线框模式</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);<o:p></o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;
+ mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=259 valign=top style='width:194.45pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>glutSolidSphere(GLfloat,GLint,GLint)</span></p>
+  </td>
+  <td width=309 valign=top style='width:231.95pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>绘制球体，</span></p>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>参数表示：半径、纬线数、经线数</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=259 valign=top style='width:194.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>glutSolidTeapot(GLdoule)</span></p>
+  </td>
+  <td width=309 valign=top style='width:231.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>绘制一个茶壶</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=259 valign=top style='width:194.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>glutSolidCone(GLdouble,GLdouble,int,int)</span></p>
+  </td>
+  <td width=309 valign=top style='width:231.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>绘制一个圆锥面，</span></p>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>参数表示：半径、高、母线数</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=259 valign=top style='width:194.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>glutSolidCube(GLdouble)</span></p>
+  </td>
+  <td width=309 valign=top style='width:231.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>绘制正方体</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td width=259 valign=top style='width:194.45pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>glutSolidTorus(GLdouble,GLdouble,GLint,GLint)</span></p>
+  </td>
+  <td width=309 valign=top style='width:231.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>绘制轮胎一样的几何体，</span></p>
+  <p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman"'>参数表示：内圈半径、外圈半径、内圈母线、外圈母线</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc16246"></a><a name="_Toc9892"><span style='mso-bookmark:_Toc16246'><span
+lang=EN-US>8.</span></span></a><span style='mso-bookmark:_Toc9892'><span
+style='mso-bookmark:_Toc16246'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>分形</span></span></span></h2>
+
+<h2><a name="_Toc19501"></a><a name="_Toc13813"><span style='mso-bookmark:_Toc19501'><span
+lang=EN-US>9.</span></span></a><span style='mso-bookmark:_Toc13813'><span
+style='mso-bookmark:_Toc19501'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>粒子系统</span></span></span></h2>
+
+<h1><a name="_Toc12462"></a><a name="_Toc26523"><span style='mso-bookmark:_Toc12462'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>三、视窗控制</span></span></a></h1>
+
+<h2><a name="_Toc30189"></a><a name="_Toc15820"><span style='mso-bookmark:_Toc30189'><span
+lang=EN-US>1.</span></span></a><span style='mso-bookmark:_Toc15820'><span
+style='mso-bookmark:_Toc30189'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>动画</span></span></span></h2>
+
+<h3><a name="_Toc21981"><span lang=EN-US>(1)</span></a><span style='mso-bookmark:
+_Toc21981'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>一般代码</span></span></h3>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>使用双缓冲，</span><span lang=EN-US>display</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>函数中及时清理环境</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glPushMatrix();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:red'>实现动画的代码</span><span
+lang=EN-US style='color:red'>;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glPopMatrix();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>myIdle</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>函数</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>void myIdle(void)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span lang=EN-US
+style='color:red'>//</span><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";color:red'>延时函数会导致动画不均匀，毕竟不是多线程</span><span
+lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>//_sleep(1);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:red'>修改一些变量</span><span lang=EN-US style='color:red'>;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'><span
+style='mso-spacerun:yes'>    </span>display();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>在</span><span lang=EN-US>glutDisplayFunc</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>和</span><span lang=EN-US>glutMainLoop</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>函数间插入</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glutIdleFunc(myIdle);<o:p></o:p></span></p>
+
+<h3><a name="_Toc20278"><span lang=EN-US>(2)</span></a><span style='mso-bookmark:
+_Toc20278'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>显示列表</span></span></h3>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>将一组函数看做一个操作，即一个显示列表；使用双缓冲</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>循环中，仅初始化一次；也可以创建多个显示列表</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>static int list = 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>if( list == 0 )<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>分配一个未使用的显示列表</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>list=glGenLists(1);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>创建一个显示列表</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glNewList(list,
+GL_COMPILE);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:red'>一组函数</span><span lang=EN-US
+style='color:red'>;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glEndList();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>调用显示列表，并且及时清理环境</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glPushMatrix();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glCallList(list);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glPopMatrix();<o:p></o:p></span></p>
+
+<h2><a name="_Toc24346"></a><a name="_Toc7168"><span style='mso-bookmark:_Toc24346'><span
+lang=EN-US>2.</span></span></a><span style='mso-bookmark:_Toc7168'><span
+style='mso-bookmark:_Toc24346'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>键盘</span></span></span></h2>
+
+<h3><a name="_Toc9555"></a><a name="_Toc14459"><span style='mso-bookmark:_Toc9555'><span
+lang=EN-US>(1)</span></span></a><span style='mso-bookmark:_Toc14459'><span
+style='mso-bookmark:_Toc9555'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>常规键</span></span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>void myKey(unsigned char
+key,int x,int y){...}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>在</span><span lang=EN-US style='color:red'>glutDisplayFunc</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>函数和</span><span lang=EN-US style='color:red'>glutMainLoop</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>函数间加入</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glutKeyboardFunc(myKey);</span></p>
+
+<h3><a name="_Toc29677"></a><a name="_Toc29039"><span style='mso-bookmark:_Toc29677'><span
+lang=EN-US>(2)</span></span></a><span style='mso-bookmark:_Toc29039'><span
+style='mso-bookmark:_Toc29677'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>功能键</span></span></span></h3>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>比如方向键下</span><span lang=EN-US>GLUT_KEY_DOWN</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>void myKey(int key,int
+x,int y){...}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>在</span><span lang=EN-US style='color:red'>glutDisplayFunc</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>函数和</span><span lang=EN-US style='color:red'>glutMainLoop</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>函数间加入</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glutSpecialFunc(myKey);</span></p>
+
+<h3><a name="_Toc23426"></a><a name="_Toc16471"><span style='mso-bookmark:_Toc23426'><span
+lang=EN-US>(3)</span></span></a><span style='mso-bookmark:_Toc16471'><span
+style='mso-bookmark:_Toc23426'><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>组合键</span></span></span></h3>
+
+<h2><a name="_Toc17672"></a><a name="_Toc14216"><span style='mso-bookmark:_Toc17672'><span
+lang=EN-US>3.</span></span></a><span style='mso-bookmark:_Toc14216'><span
+style='mso-bookmark:_Toc17672'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>鼠标</span></span></span></h2>
+
+<h3><a name="_Toc6231"><span lang=EN-US>(1)</span></a><span style='mso-bookmark:
+_Toc6231'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>左右键</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//button</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>属性：</span><span lang=EN-US style='color:red'>GLUT_LEFT_BUTTON,GLUT_RIGHT_BUTTON<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//state</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>属性：</span><span lang=EN-US style='color:red'>GLUT_UP,GLUT_DOWN<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//x,y</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>表示鼠标相对窗口左上角的坐标</span><span lang=EN-US
+style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>void myMouse(int button,
+int state, int x,int y){...}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>在</span><span lang=EN-US style='color:red'>glutDisplayFunc</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>函数和</span><span lang=EN-US style='color:red'>glutMainLoop</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>函数间加入</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glutMouseFunc(myMouse);<o:p></o:p></span></p>
+
+<h3><a name="_Toc23731"><span lang=EN-US>(2)</span></a><span style='mso-bookmark:
+_Toc23731'><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>鼠标移动</span></span></h3>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>void myMove(int x,int
+y){...}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>//</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>在</span><span lang=EN-US style='color:red'>glutDisplayFunc</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>函数和</span><span lang=EN-US style='color:red'>glutMainLoop</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red'>函数间加入</span><span lang=EN-US style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:red'>glutMotionFunc(myMove);</span></p>
+
+<h2><a name="_Toc19191"></a><a name="_Toc29356"><span style='mso-bookmark:_Toc19191'><span
+lang=EN-US>4.</span></span></a><span style='mso-bookmark:_Toc29356'><span
+style='mso-bookmark:_Toc19191'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>窗口菜单</span></span></span></h2>
+
+<h2><a name="_Toc11155"></a><a name="_Toc14795"><span style='mso-bookmark:_Toc11155'><span
+lang=EN-US>5.</span></span></a><span style='mso-bookmark:_Toc14795'><span
+style='mso-bookmark:_Toc11155'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>子窗口</span></span></span></h2>
+
+<h1><a name="_Toc12092"></a><a name="_Toc10938"><span style='mso-bookmark:_Toc12092'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>四、附录</span></span></a></h1>
+
+<h2><a name="_Toc31927"></a><a name="_Toc13619"><span style='mso-bookmark:_Toc31927'><span
+lang=EN-US>1.</span></span></a><span style='mso-bookmark:_Toc13619'><span
+style='mso-bookmark:_Toc31927'><span style='font-family:宋体;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>可能用到的网址</span></span></span></h2>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;
+ mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=472 valign=top style='width:354.35pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>https://www.opengl.org/sdk/</span></p>
+  </td>
+  <td width=472 valign=top style='width:354.35pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>OpenGL</span><span style='font-family:
+  宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>官网</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc28689"><span lang=EN-US>2.</span></a><span style='mso-bookmark:
+_Toc28689'><span style='font-family:宋体;mso-ascii-font-family:Arial;mso-hansi-font-family:
+Arial'>贝塞尔曲线</span></span></h2>
+
+<p class=MsoNormal><span lang=EN-US><!--[if gte vml 1]><v:rect id="对象_x0020_2"
+ o:spid="_x0000_i1026" style='width:.75pt;height:.75pt;mso-wrap-style:square;
+ mso-position-horizontal-relative:page;mso-position-vertical-relative:page'
+ filled="f" stroked="f">
+ <v:fill o:detectmouseclick="t"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:rect><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ShapeID="对象_x0020_2" DrawAspect="Content"
+  ObjectID="_1644680040">
+  <o:WordFieldCodes>\* MERGEFORMAT</o:WordFieldCodes>
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+</div>
+
+</body>
+
+</html>
